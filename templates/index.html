@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет момента силы</title>
+</head>
+<body>
+<form action="http://localhost:5000/get-result" method="post" target="_blank">
+    <h2>Расчет моментов сил</h2>
+    <fieldset>
+        <legend>Длины конечностей</legend>
+        <ul>
+            <li>
+                <label for="forearm">Предплечье:</label>
+                <input type="number" name="forearm" placeholder="В метрах" id="forearm" required>
+            </li>
+            <li>
+                <label for="shoulder">Плечо:</label>
+                <input type="number" name="shoulder" placeholder="В метрах" id="shoulder" required>
+            </li>
+            <li>
+                <label for="back">Спина:</label>
+                <input type="number" name="back" placeholder="В метрах" id="back" required>
+            </li>
+            <li>
+                <label for="hip">Бедро:</label>
+                <input type="number" name="hip" placeholder="В метрах" id="hip" required>
+            </li>
+            <li>
+                <label for="shin">Голень:</label>
+                <input type="number" name="shin" placeholder="В метрах" id="shin" required>
+            </li>
+            <li>
+                <label for="foot">Стопа:</label>
+                <input type="number" name="foot" placeholder="В метрах" id="foot" required>
+            </li>
+        </ul>
+        <legend>Углы между конечностями и силой</legend>
+        <ul>
+            <li>
+                <label for="forearm_angle">Угол между силой и предплечьем:</label>
+                <input type="number" name="forearm_angle" placeholder="В градусах" required>
+            </li>
+            <li>
+                <label for="shoulder_angle">Угол между силой и плечом:</label>
+                <input type="number" name="shoulder_angle" placeholder="В градусах" required>
+            </li>
+            <li>
+                <label for="back_angle">Угол между силой и спиной</label>
+                <input type="number" name="back_angle" placeholder="В градусах" required>
+            </li>
+            <li>
+                <label for="hip_angle">Угол между силой и бедром</label>
+                <input type="number" name="hip_angle" placeholder="В градусах" required>
+            </li>
+            <li>
+                <label for="shin_angle">Угол между силой и голенью</label>
+                <input type="number" name="shin_angle" placeholder="В градусах" required>
+            </li>
+            <li>
+                <label for="foot_angle">Угол между силой и стопой</label>
+                <input type="number" name="foot_angle" placeholder="В градусах" required>
+            </li>
+        </ul>
+        <legend>Сила</legend>
+        <ul>
+            <li>
+                <label for="force">Сила действующая на тело</label>
+                <input type="number" name="force" placeholder="В ньютонах" required>
+            </li>
+        </ul>
+    </fieldset>
+    <div>
+        <button type="submit">Рассчитать</button>
+    </div>
+</form>
+</body>
+</html>
